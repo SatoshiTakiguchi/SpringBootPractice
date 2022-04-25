@@ -1,7 +1,9 @@
 version: '3.6'
 services:
   app:
-    image: openjdk:15
+    build:
+      context: server/
+      dockerfile: .
     ports:
       - 8080:8080
     tty: true
