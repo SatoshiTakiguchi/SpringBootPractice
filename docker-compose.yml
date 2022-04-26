@@ -19,9 +19,9 @@ services:
     ports:
     - "3306:3306"
     volumes:
-    - ./mysql/settings/:/docker-entrypoint-initdb.d
+    - ./mysql/init/:/docker-entrypoint-initdb.d
     - ./mysql/data/:/var/lib/mysql
-    - ./mysql/settings/setting.cnf:/etc/mysql/conf.d/my.cnf
+    - ./mysql/sql/mysql.cnf:/etc/mysql/conf.d/my.cnf
     environment:
       MYSQL_DATABASE: "sample"
       MYSQL_ROOT_USER: "root"

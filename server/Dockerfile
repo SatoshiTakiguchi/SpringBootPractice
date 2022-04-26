@@ -1,3 +1,4 @@
+
 FROM openjdk:15
 
 ENV APP_ROOT /app
