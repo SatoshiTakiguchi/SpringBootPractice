@@ -6,4 +6,3 @@ COPY . $APP_ROOT
 WORKDIR $APP_ROOT
 
 ENTRYPOINT ["sh", "./gradlew", "bootRun"]
-
