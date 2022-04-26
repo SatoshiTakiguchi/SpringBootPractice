@@ -10,3 +10,20 @@ services:
     volumes:
       - ./server:/srv:cached
     working_dir: /srv
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8
+    container_name: "db"
+    ports:
+    - "3306:3306"
+    volumes:
+    - ./mysql/settings/:/docker-entrypoint-initdb.d
+    - ./mysql/data/:/var/lib/mysql
+    - ./mysql/settings/setting.cnf:/etc/mysql/conf.d/my.cnf
+    environment:
+      MYSQL_DATABASE: "sample"
+      MYSQL_ROOT_USER: "root"
+      MYSQL_ROOT_PASSWORD: "root"
+      TZ: "Asia/Tokyo"
