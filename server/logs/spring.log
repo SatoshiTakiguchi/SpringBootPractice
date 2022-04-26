@@ -8500,3 +8500,204 @@ org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property o
 2022-04-26 12:08:25.736 TRACE 251 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
 2022-04-26 12:08:25.762 DEBUG 251 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
 2022-04-26 12:08:25.764 TRACE 251 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2aea1854] 
+2022-04-26 12:08:31.745 DEBUG 251 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-26 12:26:00.134  INFO 250 --- [main] app.AppApplication                       : Starting AppApplication using Java 15.0.2 on da4f089127c2 with PID 250 (/srv/build/classes/java/main started by root in /srv)
+2022-04-26 12:26:00.146  INFO 250 --- [main] app.AppApplication                       : No active profile set, falling back to 1 default profile: "default"
+2022-04-26 12:26:03.331  INFO 250 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-26 12:26:03.772  INFO 250 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 365 ms. Found 2 JPA repository interfaces.
+2022-04-26 12:26:06.925  INFO 250 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-26 12:26:06.981  INFO 250 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-26 12:26:06.982  INFO 250 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-26 12:26:07.332  INFO 250 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-26 12:26:07.333  INFO 250 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7002 ms
+2022-04-26 12:26:08.343  INFO 250 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-26 12:26:09.478  INFO 250 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-26 12:26:09.959  INFO 250 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-26 12:26:10.553  INFO 250 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-26 12:26:12.118  INFO 250 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-26 12:26:13.596  INFO 250 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-26 12:26:18.337  INFO 250 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-26 12:26:18.438  INFO 250 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-26 12:26:19.969  WARN 250 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-26 12:26:20.513 DEBUG 250 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-26 12:26:20.995 TRACE 250 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.AppApplication:
+	{ [/]}: home()
+2022-04-26 12:26:21.000 TRACE 250 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.c.ContactController:
+	{ [/contacts]}: users(Model)
+2022-04-26 12:26:21.001 TRACE 250 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.c.HelloController:
+	{GET [/]}: index(Model)
+2022-04-26 12:26:21.002 TRACE 250 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.c.UserController:
+	{ [/users]}: users(Model)
+2022-04-26 12:26:21.004 TRACE 250 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-04-26 12:26:21.006 DEBUG 250 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-04-26 12:26:21.045  INFO 250 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-26 12:26:21.088 DEBUG 250 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2022-04-26 12:26:21.107 TRACE 250 --- [main] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2022-04-26 12:26:21.143 TRACE 250 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2022-04-26 12:26:21.143 TRACE 250 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-04-26 12:26:21.144 DEBUG 250 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-26 12:26:21.183 DEBUG 250 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-26 12:26:21.714  INFO 250 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-26 12:26:21.733  INFO 250 --- [main] app.AppApplication                       : Started AppApplication in 23.928 seconds (JVM running for 24.956)
+2022-04-26 12:27:45.960  INFO 250 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-26 12:27:45.960  INFO 250 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-26 12:27:45.961 TRACE 250 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@63b58ff4
+2022-04-26 12:27:45.961 TRACE 250 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@4eb48298
+2022-04-26 12:27:45.961 TRACE 250 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@1ead3c67
+2022-04-26 12:27:45.962 TRACE 250 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
+2022-04-26 12:27:45.963 TRACE 250 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
+2022-04-26 12:27:45.963 DEBUG 250 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-04-26 12:27:45.964  INFO 250 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-04-26 12:27:46.016 TRACE 250 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/contacts", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-26 12:27:46.047 TRACE 250 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to app.controller.ContactController#users(Model)
+2022-04-26 12:27:46.148 TRACE 250 --- [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-26 12:27:47.295 TRACE 250 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-26 12:27:47.302 DEBUG 250 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-26 12:27:47.303 TRACE 250 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@59ba6736] 
+2022-04-26 12:27:49.142 DEBUG 250 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-26 12:44:30.198  INFO 249 --- [main] app.AppApplication                       : Starting AppApplication using Java 15.0.2 on bc5003c8d320 with PID 249 (/srv/build/classes/java/main started by root in /srv)
+2022-04-26 12:44:30.214  INFO 249 --- [main] app.AppApplication                       : No active profile set, falling back to 1 default profile: "default"
+2022-04-26 12:44:34.120  INFO 249 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-26 12:44:34.597  INFO 249 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 411 ms. Found 2 JPA repository interfaces.
+2022-04-26 12:44:38.079  INFO 249 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-26 12:44:38.133  INFO 249 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-26 12:44:38.134  INFO 249 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-26 12:44:38.469  INFO 249 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-26 12:44:38.470  INFO 249 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8033 ms
+2022-04-26 12:44:39.585  INFO 249 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-26 12:44:40.734  INFO 249 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-26 12:44:41.177  INFO 249 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-26 12:44:42.010  INFO 249 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-26 12:44:44.183  INFO 249 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-26 12:44:45.882  INFO 249 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-26 12:44:51.837  INFO 249 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-26 12:44:51.935  INFO 249 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-26 12:44:53.926  WARN 249 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-26 12:44:54.612 DEBUG 249 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-26 12:44:55.412 TRACE 249 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.AppApplication:
+	{ [/]}: home()
+2022-04-26 12:44:55.419 TRACE 249 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.c.ContactController:
+	{ [/contacts]}: users(Model)
+2022-04-26 12:44:55.420 TRACE 249 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.c.HelloController:
+	{GET [/]}: index(Model)
+2022-04-26 12:44:55.421 TRACE 249 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.c.UserController:
+	{ [/users]}: users(Model)
+2022-04-26 12:44:55.424 TRACE 249 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-04-26 12:44:55.428 DEBUG 249 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2022-04-26 12:44:55.487  INFO 249 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-26 12:44:55.551 DEBUG 249 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2022-04-26 12:44:55.573 TRACE 249 --- [main] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2022-04-26 12:44:55.614 TRACE 249 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2022-04-26 12:44:55.615 TRACE 249 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-04-26 12:44:55.615 DEBUG 249 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-26 12:44:55.659 DEBUG 249 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-26 12:44:56.225  INFO 249 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-26 12:44:56.246  INFO 249 --- [main] app.AppApplication                       : Started AppApplication in 28.957 seconds (JVM running for 30.15)
+2022-04-26 12:47:19.254  INFO 249 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-26 12:47:19.254  INFO 249 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-26 12:47:19.255 TRACE 249 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@66226ab
+2022-04-26 12:47:19.255 TRACE 249 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@6516181f
+2022-04-26 12:47:19.256 TRACE 249 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@37ade216
+2022-04-26 12:47:19.256 TRACE 249 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
+2022-04-26 12:47:19.257 TRACE 249 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
+2022-04-26 12:47:19.257 DEBUG 249 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-04-26 12:47:19.258  INFO 249 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-04-26 12:47:19.323 TRACE 249 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/contacts", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-26 12:47:19.365 TRACE 249 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to app.controller.ContactController#users(Model)
+2022-04-26 12:47:19.455 TRACE 249 --- [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-26 12:47:20.591 TRACE 249 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-26 12:47:20.599 DEBUG 249 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-26 12:47:20.599 TRACE 249 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@40d5234b] 
+2022-04-26 12:47:22.187 DEBUG 249 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-26 13:54:01.400  INFO 254 --- [main] app.AppApplication                       : Starting AppApplication using Java 15.0.2 on 3e5926e1ebcd with PID 254 (/srv/build/classes/java/main started by root in /srv)
+2022-04-26 13:54:01.412  INFO 254 --- [main] app.AppApplication                       : No active profile set, falling back to 1 default profile: "default"
+2022-04-26 13:54:04.757  INFO 254 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-26 13:54:05.234  INFO 254 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 408 ms. Found 2 JPA repository interfaces.
+2022-04-26 13:54:08.228  INFO 254 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-26 13:54:08.284  INFO 254 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-26 13:54:08.285  INFO 254 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-26 13:54:08.619  INFO 254 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-26 13:54:08.619  INFO 254 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7024 ms
+2022-04-26 13:54:09.713  INFO 254 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-26 13:54:10.728  INFO 254 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-26 13:54:11.161  INFO 254 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-26 13:54:11.722  INFO 254 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-26 13:54:13.262  INFO 254 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-26 13:54:14.708  INFO 254 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-26 13:54:19.219  INFO 254 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-26 13:54:19.327  INFO 254 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-26 13:54:20.915  WARN 254 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-26 13:54:21.484 DEBUG 254 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-26 13:54:21.955 TRACE 254 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.AppApplication:
+	{ [/]}: home()
+2022-04-26 13:54:21.969 TRACE 254 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.c.ContactController:
+	{POST [/contacts/new/]}: add(Contact)
+	{DELETE [/contacts/delete/{id}]}: delete(Long)
+	{GET [/contacts/{id}]}: getById(Long,Model)
+	{ [/contacts/]}: contacts(Contact,Model)
+	{POST [/contacts/edit/]}: edit(Contact)
+2022-04-26 13:54:21.971 TRACE 254 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.c.HelloController:
+	{GET [/]}: index(Model)
+2022-04-26 13:54:21.973 TRACE 254 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.c.UserController:
+	{ [/users]}: users(Model)
+2022-04-26 13:54:21.975 TRACE 254 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-04-26 13:54:21.978 DEBUG 254 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2022-04-26 13:54:22.021  INFO 254 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-26 13:54:22.062 DEBUG 254 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2022-04-26 13:54:22.078 TRACE 254 --- [main] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2022-04-26 13:54:22.120 TRACE 254 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2022-04-26 13:54:22.120 TRACE 254 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-04-26 13:54:22.121 DEBUG 254 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-26 13:54:22.158 DEBUG 254 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-26 13:54:22.687  INFO 254 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-26 13:54:22.709  INFO 254 --- [main] app.AppApplication                       : Started AppApplication in 23.656 seconds (JVM running for 24.732)
+2022-04-26 13:54:28.439  INFO 254 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-26 13:54:28.440  INFO 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-26 13:54:28.441 TRACE 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@12ebfb2d
+2022-04-26 13:54:28.441 TRACE 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@278c998
+2022-04-26 13:54:28.441 TRACE 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@4203529f
+2022-04-26 13:54:28.442 TRACE 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
+2022-04-26 13:54:28.443 TRACE 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
+2022-04-26 13:54:28.444 DEBUG 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-04-26 13:54:28.444  INFO 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-04-26 13:54:28.519 TRACE 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/contacts", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-26 13:54:28.575 TRACE 254 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]] and 4 interceptors
+2022-04-26 13:54:28.610 DEBUG 254 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-04-26 13:54:28.611 TRACE 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-26 13:54:28.611 DEBUG 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND, headers={masked}
+2022-04-26 13:54:28.641 TRACE 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-26 13:54:28.649 TRACE 254 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-26 13:54:28.652 TRACE 254 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-26 13:54:28.726 TRACE 254 --- [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@6b94e3b7, org.apache.catalina.connector.ResponseFacade@a813da8]
+2022-04-26 13:54:28.817 TRACE 254 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-26 13:54:28.824 DEBUG 254 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-26 13:54:28.824 TRACE 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Rendering view [org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView@5b1f5fcc] 
+2022-04-26 13:54:28.849 DEBUG 254 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404, headers={masked}
+2022-04-26 13:55:01.440 TRACE 254 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/contacts/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-26 13:55:01.441 TRACE 254 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to app.controller.ContactController#contacts(Contact, Model)
+2022-04-26 13:55:01.512 TRACE 254 --- [http-nio-8080-exec-2] o.s.web.method.HandlerMethod             : Arguments: [{id:null,name:null,email:null,content:null}, {contact={id:null,name:null,email:null,content:null}, org.springframework.validation.BindingResult.contact=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-04-26 13:55:02.661 TRACE 254 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-26 13:55:02.663 DEBUG 254 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-26 13:55:02.663 TRACE 254 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@5e4df099] 
+2022-04-26 13:55:04.272 DEBUG 254 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
