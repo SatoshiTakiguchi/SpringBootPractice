@@ -5373,3 +5373,52 @@ java.sql.SQLIntegrityConstraintViolationException: Column 'email' cannot be null
 2022-04-27 05:32:36.733 DEBUG 209 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
 2022-04-27 05:32:36.734 TRACE 209 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@41f07a89] 
 2022-04-27 05:32:36.941 DEBUG 209 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-27 05:34:42.153  INFO 255 --- [main] app.AppApplication                       : Starting AppApplication using Java 15.0.2 on 1feed508fb1f with PID 255 (/srv/build/classes/java/main started by root in /srv)
+2022-04-27 05:34:42.173  INFO 255 --- [main] app.AppApplication                       : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 05:34:49.787  INFO 255 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 05:34:51.169  INFO 255 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1214 ms. Found 2 JPA repository interfaces.
+2022-04-27 05:35:01.629  INFO 255 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 05:35:01.846  INFO 255 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 05:35:01.847  INFO 255 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 05:35:02.577  INFO 255 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-27 05:35:02.579  INFO 255 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 20089 ms
+2022-04-27 05:35:04.287  INFO 255 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-27 05:35:07.720  INFO 255 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-27 05:35:08.611  INFO 255 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 05:35:09.652  INFO 255 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-27 05:35:12.457  INFO 255 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-27 05:35:15.111  INFO 255 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-27 05:35:26.283  INFO 255 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 05:35:26.667  INFO 255 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 05:35:31.129  WARN 255 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 05:35:32.206 DEBUG 255 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-27 05:35:33.977 TRACE 255 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.AppApplication:
+	{ [/]}: home()
+2022-04-27 05:35:33.999 TRACE 255 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.c.ContactController:
+	{POST [/contacts/new]}: add(ContactForm)
+	{DELETE [/contacts/delete/{id}]}: delete(Long)
+	{GET [/contacts]}: form(Model)
+	{ [/contacts/master]}: contacts(Model)
+	{POST [/contacts/confirm]}: confirm(ContactForm,Model)
+2022-04-27 05:35:34.001 TRACE 255 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.c.HelloController:
+	{GET [/]}: index(Model)
+2022-04-27 05:35:34.002 TRACE 255 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.c.UserController:
+	{ [/users]}: users(Model)
+2022-04-27 05:35:34.004 TRACE 255 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-04-27 05:35:34.008 DEBUG 255 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2022-04-27 05:35:34.067  INFO 255 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 05:35:34.183 DEBUG 255 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2022-04-27 05:35:34.225 TRACE 255 --- [main] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2022-04-27 05:35:34.349 TRACE 255 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2022-04-27 05:35:34.350 TRACE 255 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-04-27 05:35:34.351 DEBUG 255 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-27 05:35:34.485 DEBUG 255 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-27 05:35:36.466  INFO 255 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 05:35:36.511  INFO 255 --- [main] app.AppApplication                       : Started AppApplication in 60.979 seconds (JVM running for 63.564)
