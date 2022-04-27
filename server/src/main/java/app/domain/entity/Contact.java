@@ -28,6 +28,18 @@ public class Contact {
   @Column(name = "content")
   private String content;
 
+  public void setName(String name){
+    this.name = name;
+  }
+
+  public void setEmail(String email){
+    this.email = email;
+  }
+
+  public void setContent(String content){
+    this.content = content;
+  }
+
   @Override
   public String toString() {
     return String.format("{id:%d,name:%s,email:%s,content:%s}", id, name, email, content);
