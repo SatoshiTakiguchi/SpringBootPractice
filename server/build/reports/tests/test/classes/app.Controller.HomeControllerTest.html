@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - HomeControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>HomeControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/app.Controller.html">app.Controller</a> &gt; HomeControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.041s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Hello World画面に遷移すること</td>
+<td class="success">testGetAdd()</td>
+<td class="success">0.041s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2022-04-27 08:41:02.448  INFO 516 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [app.Controller.HomeControllerTest], using SpringBootContextLoader
+2022-04-27 08:41:02.464  INFO 516 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [app.Controller.HomeControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-04-27 08:41:02.465  INFO 516 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [app.Controller.HomeControllerTest]: HomeControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-04-27 08:41:02.473  INFO 516 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration app.AppApplication for test class app.Controller.HomeControllerTest
+2022-04-27 08:41:02.492  INFO 516 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-04-27 08:41:02.494  INFO 516 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@a7b9673, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ddf31cd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1eb7de01, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1986fd5b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4f982816, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b5d2971, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7bbaa3cd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5578e5c4, org.springframework.test.context.event.EventPublishingTestExecutionListener@5b2ebfe5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@690a0350, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@47006177, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5544ea96, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7bbbb64c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@42923ae8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@65df014]
+2022-04-27 08:41:02.520 TRACE 516 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{GET [/]}, { [/]}]
+2022-04-27 08:41:02.522 TRACE 516 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to app.controller.HelloController#index(Model)
+2022-04-27 08:41:02.523 TRACE 516 --- [    Test worker] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-27 08:41:02.524 TRACE 516 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-27 08:41:02.525 TRACE 516 --- [    Test worker] o.s.w.s.v.InternalResourceViewResolver   : View with key [index] served from cache
+2022-04-27 08:41:02.526 DEBUG 516 --- [    Test worker] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at Apr 27, 2022, 8:41:09 AM</p>
+</div>
+</div>
+</body>
+</html>
