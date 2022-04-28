@@ -8,7 +8,7 @@ services:
       - 8080:8080
     tty: true
     volumes:
-      - ./server:/srv:cached
+      - ./server:/srv
     working_dir: /srv
     depends_on:
       - db
