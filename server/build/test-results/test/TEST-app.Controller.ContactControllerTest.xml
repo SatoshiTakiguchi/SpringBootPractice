@@ -1,19 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="app.Controller.ContactControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-28T08:54:52" hostname="db396f07b313" time="1.194">
+<testsuite name="app.Controller.ContactControllerTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-04-28T09:50:45" hostname="6272649884ea" time="0.727">
   <properties/>
-  <testcase name="問い合わせ追加で正当な値が入力された場合、確認画面に遷移するること" classname="app.Controller.ContactControllerTest" time="1.194"/>
-  <system-out><![CDATA[08:54:32.442 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-08:54:32.640 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-08:54:33.099 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [app.Controller.ContactControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-08:54:33.345 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [app.Controller.ContactControllerTest], using SpringBootContextLoader
-08:54:33.399 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [app.Controller.ContactControllerTest]: class path resource [app/Controller/ContactControllerTest-context.xml] does not exist
-08:54:33.408 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [app.Controller.ContactControllerTest]: class path resource [app/Controller/ContactControllerTestContext.groovy] does not exist
-08:54:33.409 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [app.Controller.ContactControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-08:54:34.138 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [app.Controller.ContactControllerTest]
-08:54:35.672 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [app.Controller.ContactControllerTest]: using defaults.
-08:54:35.678 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-08:54:35.931 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4277127c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4c7e978c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@354e7004, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@22ebccb9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5875de6a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@608fe01f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2687725a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5a75ec37, org.springframework.test.context.event.EventPublishingTestExecutionListener@2c05ff9d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@33956d1a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2e1ddc90, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5b7c8930, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@58867cd5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@40e32762, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5a8ab2]
-08:54:35.985 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@17461db testClass = ContactControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3fd9e827 testClass = ContactControllerTest, locations = '{}', classes = '{class app.controller.ContactController}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@70101687, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5c9ac4cc, [ImportsContextCustomizer@4e682398 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@299270eb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@31f20c9f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@989d9819, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@75769ab0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@207b8649], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+  <testcase name="問い合わせ追加で正当な値が入力された場合、確認画面に遷移するること" classname="app.Controller.ContactControllerTest" time="0.727">
+    <failure message="java.lang.AssertionError: Model attribute 'contact_form' expected:&lt;ContactForm(name=teswwt, email=test@email, content=content)&gt; but was:&lt;ContactForm(name=null, email=null, content=null)&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Model attribute 'contact_form' expected:&lt;ContactForm(name=teswwt, email=test@email, content=content)&gt; but was:&lt;ContactForm(name=null, email=null, content=null)&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
+	at org.springframework.test.web.servlet.result.ModelResultMatchers.lambda$attribute$1(ModelResultMatchers.java:74)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:212)
+	at app.Controller.ContactControllerTest.testPostAdd(ContactTest.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[2022-04-28 09:50:42.322  INFO 522 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [app.Controller.ContactControllerTest], using SpringBootContextLoader
+2022-04-28 09:50:42.339  INFO 522 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [app.Controller.ContactControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-04-28 09:50:42.427  INFO 522 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-04-28 09:50:42.428  INFO 522 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@49249169, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@19f52861, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@16f9d20c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@11d5a35b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7c17d7d1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4c914e12, org.springframework.test.context.transaction.TransactionalTestExecutionListener@14209c3e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28533a9a, org.springframework.test.context.event.EventPublishingTestExecutionListener@6a38c91e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2c1feb95, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3c4e4344, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@d7839bd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@21247135, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@72b475c7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3c2e5cb6]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -23,34 +106,76 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.6.7)
 
-2022-04-28 08:54:39.899  INFO 946 --- [    Test worker] app.Controller.ContactControllerTest     : Starting ContactControllerTest using Java 15.0.2 on db396f07b313 with PID 946 (started by root in /srv)
-2022-04-28 08:54:39.908  INFO 946 --- [    Test worker] app.Controller.ContactControllerTest     : No active profile set, falling back to 1 default profile: "default"
-2022-04-28 08:54:40.112 TRACE 946 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6b8b5020, started on Thu Apr 28 08:54:40 UTC 2022
-2022-04-28 08:54:47.711 TRACE 946 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'messageSource' bean, using [Empty MessageSource]
-2022-04-28 08:54:47.712 TRACE 946 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'applicationEventMulticaster' bean, using [SimpleApplicationEventMulticaster]
-2022-04-28 08:54:48.372  INFO 946 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2022-04-28 08:54:48.373  INFO 946 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2022-04-28 08:54:48.853 DEBUG 946 --- [    Test worker] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
-2022-04-28 08:54:49.506 TRACE 946 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+2022-04-28 09:50:42.734  INFO 522 --- [    Test worker] app.Controller.ContactControllerTest     : Starting ContactControllerTest using Java 15.0.2 on 6272649884ea with PID 522 (started by root in /srv)
+2022-04-28 09:50:42.736  INFO 522 --- [    Test worker] app.Controller.ContactControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2022-04-28 09:50:42.776 TRACE 522 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@75491241, started on Thu Apr 28 09:50:42 UTC 2022
+2022-04-28 09:50:43.803 TRACE 522 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'messageSource' bean, using [Empty MessageSource]
+2022-04-28 09:50:43.804 TRACE 522 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'applicationEventMulticaster' bean, using [SimpleApplicationEventMulticaster]
+2022-04-28 09:50:44.066  INFO 522 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-28 09:50:44.067  INFO 522 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-28 09:50:44.296 DEBUG 522 --- [    Test worker] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2022-04-28 09:50:44.514 TRACE 522 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
 	a.c.ContactController:
 	{POST [/contacts/new]}: add(ContactForm)
 	{DELETE [/contacts/delete/{id}]}: delete(Long)
 	{GET [/contacts]}: form(Model)
 	{ [/contacts/master]}: contacts(Model)
 	{POST [/contacts/confirm]}: confirm(ContactForm,Model)
-2022-04-28 08:54:49.517 DEBUG 946 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
-2022-04-28 08:54:49.686 TRACE 946 --- [    Test worker] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'org.springframework.web.servlet.function.support.RouterFunctionMapping'
-2022-04-28 08:54:50.349 DEBUG 946 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: none
-2022-04-28 08:54:51.051 DEBUG 946 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: none
-2022-04-28 08:54:51.723  INFO 946 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3349 ms
-2022-04-28 08:54:52.536 TRACE 946 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'lifecycleProcessor' bean, using [DefaultLifecycleProcessor]
-2022-04-28 08:54:52.633  INFO 946 --- [    Test worker] app.Controller.ContactControllerTest     : Started ContactControllerTest in 16.158 seconds (JVM running for 28.093)
-2022-04-28 08:54:53.525 TRACE 946 --- [    Test worker] o.s.w.s.support.SessionFlashMapManager   : Found FlashMap [attributes={contact_form=ContactForm(name=test3, email=test@email2, content=content2)}, targetRequestPath=null, targetRequestParams={}]
-2022-04-28 08:54:53.563 TRACE 946 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to app.controller.ContactController#confirm(ContactForm, Model)
-2022-04-28 08:54:53.861 TRACE 946 --- [    Test worker] o.s.web.method.HandlerMethod             : Arguments: [ContactForm(name=null, email=null, content=null), {contact_form=ContactForm(name=test3, email=test@email2, content=content2), contactForm=ContactForm(name=null, email=null, content=null), org.springframework.validation.BindingResult.contactForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
-2022-04-28 08:54:53.907 TRACE 946 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
-2022-04-28 08:54:53.927 DEBUG 946 --- [    Test worker] o.s.w.servlet.view.InternalResourceView  : View name 'Contact/confirm', model {contact_form=ContactForm(name=null, email=null, content=null), contactForm=ContactForm(name=null, email=null, content=null), org.springframework.validation.BindingResult.contactForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.contact_form=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
-2022-04-28 08:54:53.928 DEBUG 946 --- [    Test worker] o.s.w.servlet.view.InternalResourceView  : Forwarding to [Contact/confirm]
+2022-04-28 09:50:44.517 DEBUG 522 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2022-04-28 09:50:44.676 TRACE 522 --- [    Test worker] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'org.springframework.web.servlet.function.support.RouterFunctionMapping'
+2022-04-28 09:50:44.957 DEBUG 522 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: none
+2022-04-28 09:50:45.129 DEBUG 522 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: none
+2022-04-28 09:50:45.388  INFO 522 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1320 ms
+2022-04-28 09:50:45.562 TRACE 522 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'lifecycleProcessor' bean, using [DefaultLifecycleProcessor]
+2022-04-28 09:50:45.563  INFO 522 --- [    Test worker] app.Controller.ContactControllerTest     : Started ContactControllerTest in 3.121 seconds (JVM running for 62.473)
+2022-04-28 09:50:45.886 TRACE 522 --- [    Test worker] o.s.w.s.support.SessionFlashMapManager   : Found FlashMap [attributes={contact_form=ContactForm(name=test3, email=test@email2, content=content2)}, targetRequestPath=null, targetRequestParams={}]
+2022-04-28 09:50:45.922 TRACE 522 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to app.controller.ContactController#confirm(ContactForm, Model)
+2022-04-28 09:50:46.166 TRACE 522 --- [    Test worker] o.s.web.method.HandlerMethod             : Arguments: [ContactForm(name=null, email=null, content=null), {contact_form=ContactForm(name=test3, email=test@email2, content=content2), contactForm=ContactForm(name=null, email=null, content=null), org.springframework.validation.BindingResult.contactForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-04-28 09:50:46.200 TRACE 522 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-28 09:50:46.216 DEBUG 522 --- [    Test worker] o.s.w.servlet.view.InternalResourceView  : View name 'Contact/confirm', model {contact_form=ContactForm(name=null, email=null, content=null), contactForm=ContactForm(name=null, email=null, content=null), org.springframework.validation.BindingResult.contactForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.contact_form=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2022-04-28 09:50:46.217 DEBUG 522 --- [    Test worker] o.s.w.servlet.view.InternalResourceView  : Forwarding to [Contact/confirm]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /contacts/confirm
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = app.controller.ContactController
+           Method = app.controller.ContactController#confirm(ContactForm, Model)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = Contact/confirm
+             View = null
+        Attribute = contact_form
+            value = ContactForm(name=null, email=null, content=null)
+           errors = []
+        Attribute = contactForm
+            value = ContactForm(name=null, email=null, content=null)
+           errors = []
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Language:"en"]
+     Content type = null
+             Body = 
+    Forwarded URL = Contact/confirm
+   Redirected URL = null
+          Cookies = []
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
