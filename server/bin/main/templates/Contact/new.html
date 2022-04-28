@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>一覧画面</title>
+  </head>
+
+  <body>
+    <h2>登録項目</h2>
+      <form th:action="@{/contacts/confirm}" th:object="${contact_form}" method="post">
+        <label for="name">名前</label>
+        <input type="text" th:field="*{name}"><br>
+        <label for="email">Email</label>
+        <input type="text" th:field="*{email}"><br>
+        <label for="content">内容</label>
+        <input type="text" th:field="*{content}"><br>
+        <input type="submit" value="送信">
+      </form>
+  </body>
+</html>
