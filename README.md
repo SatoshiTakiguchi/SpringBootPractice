@@ -6,12 +6,12 @@ BootStrap
 
 
 ## 困っていること
-#### POSTのテストができません
+#### POSTのテストがうまくいきません
 具体的には、ContactTest.javaの51行目  
 .flashAttr("contact_form", contact_form2)  
-が反映されていないように思われます。  
+がうまくいっていないように思われます。  
 .andExpect(model().attribute("contact_form", contact_form1)) (55行目)  
-でフォームの属性がnullになってしまうからです。  
+でフォームの属性がnullであるというエラーが出るからです。  
 55行目はコメントにすると成功するので動作自体は問題ないと思ってます。  
   
 梅澤さんのコードも参考にしたのですが、特に目立った違いがなく、原因が不明です。  
