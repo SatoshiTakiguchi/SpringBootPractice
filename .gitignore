@@ -1,1 +1,4 @@
-*.log
+server/logs/
+server/.gradle/
+server/bin/
+server/build/
