@@ -17,7 +17,9 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+
 import app.controller.ContactController;
+import app.domain.service.ContactService;
 
 
 @SpringBootTest
@@ -25,6 +27,9 @@ import app.controller.ContactController;
 class ContactControllerTest {
     @Autowired
     private MockMvc mockMvc;
+    
+    @MockBean
+    private ContactService contactsService;
 
     @Test
     @DisplayName("問い合わせ画面に遷移すること")
@@ -35,66 +40,69 @@ class ContactControllerTest {
     }
 
     // @Test
-    // @DisplayName("プロフィールが0件の場合、Modelに0件のProfileFormのリストが設定され、プロフィール一覧画面に遷移するること")
+    // @DisplayName("問い合わせ追加で正当な値が入力された場合、問い合わせの追加処理が呼び出され、問い合わせ一覧画面に遷移するること")
+    // void testPostAdd() throws Exception {
+    //     mockMvc.perform(MockMvcRequestBuilders.post("/contacts/new")
+    //         .param("name", "penguin")
+    //         .param("email", "1999@ssss")
+    //         .param("content", "testcontent"))
+    //         .andExpect(MockMvcResultMatchers.status().isFound())
+    //         .andExpect(MockMvcResultMatchers.view().name("redirect:/contacts/list"));
+    //     Mockito.verify(contactsService, Mockito.times(1))
+    //         .addcontacts("penguin", LocalDate.of(1998, 1, 1));
+    // }
+
+    // @Test
+    // @DisplayName("問い合わせが0件の場合、Modelに0件のcontactsFormのリストが設定され、問い合わせ一覧画面に遷移するること")
     // void testGetListNoData() throws Exception {
-    //     Mockito.when(profileService.getProfileList()).thenReturn(Collections.emptyList());
-    //     MvcResult result = mockMvc.perform(MockMvcRequestBuilders.get("/profile/list"))
+    //     Mockito.when(contactsService.getcontactsList()).thenReturn(Collections.emptyList());
+    //     MvcResult result = mockMvc.perform(MockMvcRequestBuilders.get("/contacts/list"))
     //         .andExpect(MockMvcResultMatchers.status().isOk())
-    //         .andExpect(MockMvcResultMatchers.view().name("profile/list"))
+    //         .andExpect(MockMvcResultMatchers.view().name("contacts/list"))
     //         .andReturn();
     //     Map<String, Object> model = result.getModelAndView().getModel();
-    //     Assertions.assertTrue(model.containsKey("profiles"));
-    //     Assertions.assertNotNull(model.get("profiles"));
-    //     Assertions.assertTrue(model.get("profiles") instanceof List<?>);
-    //     List<ProfileForm> profileList = (List<ProfileForm>) model.get("profiles");
-    //     Assertions.assertTrue(profileList.isEmpty());
+    //     Assertions.assertTrue(model.containsKey("contactss"));
+    //     Assertions.assertNotNull(model.get("contactss"));
+    //     Assertions.assertTrue(model.get("contactss") instanceof List<?>);
+    //     List<contactsForm> contactsList = (List<contactsForm>) model.get("contactss");
+    //     Assertions.assertTrue(contactsList.isEmpty());
     // }
     // @Test
-    // @DisplayName("プロフィールが1件の場合、Modelに1件のProfileFormのリストが設定され、プロフィール一覧画面に遷移するること")
+    // @DisplayName("問い合わせが1件の場合、Modelに1件のcontactsFormのリストが設定され、問い合わせ一覧画面に遷移するること")
     // void testGetListOneData() throws Exception {
-    //     Mockito.when(profileService.getProfileList())
-    //             .thenReturn(Collections.singletonList(new ProfileDto(1L, "matsuki", LocalDate.of(1998, 1, 1))));
+    //     Mockito.when(contactsService.getcontactsList())
+    //             .thenReturn(Collections.singletonList(new contactsDto(1L, "matsuki", LocalDate.of(1998, 1, 1))));
     //     try (MockedStatic<LocalDate> mockedLocalDate = Mockito.mockStatic(LocalDate.class, Mockito.CALLS_REAL_METHODS)) {
     //         LocalDate nowDate = LocalDate.of(2020, 7, 31);
     //         mockedLocalDate.when(LocalDate::now).thenReturn(nowDate);
-    //         MvcResult result = mockMvc.perform(MockMvcRequestBuilders.get("/profile/list"))
+    //         MvcResult result = mockMvc.perform(MockMvcRequestBuilders.get("/contacts/list"))
     //             .andExpect(MockMvcResultMatchers.status().isOk())
-    //             .andExpect(MockMvcResultMatchers.view().name("profile/list"))
+    //             .andExpect(MockMvcResultMatchers.view().name("contacts/list"))
     //             .andReturn();
     //         Map<String, Object> model = result.getModelAndView().getModel();
-    //         Assertions.assertTrue(model.containsKey("profiles"));
-    //         Assertions.assertNotNull(model.get("profiles"));
-    //         Assertions.assertTrue(model.get("profiles") instanceof List<?>);
-    //         List<ProfileForm> profileList = (List<ProfileForm>) model.get("profiles");
-    //         Assertions.assertEquals(1, profileList.size());
-    //         ProfileForm profileForm = profileList.get(0);
-    //         Assertions.assertEquals("matsuki", profileForm.getName());
-    //         Assertions.assertEquals(LocalDate.of(1998, 1, 1), profileForm.getBirthday());
-    //         Assertions.assertEquals(22, profileForm.getAge());
+    //         Assertions.assertTrue(model.containsKey("contactss"));
+    //         Assertions.assertNotNull(model.get("contactss"));
+    //         Assertions.assertTrue(model.get("contactss") instanceof List<?>);
+    //         List<contactsForm> contactsList = (List<contactsForm>) model.get("contactss");
+    //         Assertions.assertEquals(1, contactsList.size());
+    //         contactsForm contactsForm = contactsList.get(0);
+    //         Assertions.assertEquals("matsuki", contactsForm.getName());
+    //         Assertions.assertEquals(LocalDate.of(1998, 1, 1), contactsForm.getBirthday());
+    //         Assertions.assertEquals(22, contactsForm.getAge());
     //     }
     // }
     
+    
     // @Test
-    // @DisplayName("プロフィール追加で正当な値が入力された場合、プロフィールの追加処理が呼び出され、プロフィール一覧画面に遷移するること")
-    // void testPostAdd() throws Exception {
-    //     mockMvc.perform(MockMvcRequestBuilders.post("/profile/add")
-    //         .param("name", "penguin")
-    //         .param("birthday", "1998-01-01"))
-    //         .andExpect(MockMvcResultMatchers.status().isFound())
-    //         .andExpect(MockMvcResultMatchers.view().name("redirect:/profile/list"));
-    //     Mockito.verify(profileService, Mockito.times(1))
-    //         .addProfile("penguin", LocalDate.of(1998, 1, 1));
-    // }
-    // @Test
-    // @DisplayName("プロフィール追加で生年月日が未入力の場合、生年月日にエラーがバインドされ、プロフィール追加画面に遷移するること")
+    // @DisplayName("問い合わせ追加で生年月日が未入力の場合、生年月日にエラーがバインドされ、問い合わせ追加画面に遷移するること")
     // void testPostAddError() throws Exception {
-    //     mockMvc.perform(MockMvcRequestBuilders.post("/profile/add")
+    //     mockMvc.perform(MockMvcRequestBuilders.post("/contacts/add")
     //         .param("name", "penguin")
     //         .param("birthday", ""))
     //         .andExpect(MockMvcResultMatchers.status().isOk())
-    //         .andExpect(MockMvcResultMatchers.view().name("profile/add"))
-    //         .andExpect(MockMvcResultMatchers.model().attributeHasErrors("profileForm"))
+    //         .andExpect(MockMvcResultMatchers.view().name("contacts/add"))
+    //         .andExpect(MockMvcResultMatchers.model().attributeHasErrors("contactsForm"))
     //         .andExpect(MockMvcResultMatchers.model().errorCount(1))
-    //         .andExpect(MockMvcResultMatchers.model().attributeHasFieldErrorCode("profileForm", "birthday", "NotNull"));
+    //         .andExpect(MockMvcResultMatchers.model().attributeHasFieldErrorCode("contactsForm", "birthday", "NotNull"));
     // }
 }
