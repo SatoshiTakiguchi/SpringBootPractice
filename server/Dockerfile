@@ -6,5 +6,5 @@ FROM openjdk:15
 # COPY . $APP_ROOT
 # WORKDIR $APP_ROOT
 
-# ENTRYPOINT ["sh", "./gradlew", "bootRun"]
+ENTRYPOINT ["sh", "./gradlew", "bootRun"]
 # ENTRYPOINT ["sh", "./gradlew", "test","jacocoTestReport"]
