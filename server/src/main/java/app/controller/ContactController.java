@@ -70,12 +70,4 @@ public class ContactController {
     //     return "redirect:/contacts";
     // }
 
-
-    //削除
-    @DeleteMapping("delete/{id}")
-    public String delete(@PathVariable("id") Long id) {
-        contactService.deleteById(id);
-        return "redirect:/contacts";
-    }
-
 }
