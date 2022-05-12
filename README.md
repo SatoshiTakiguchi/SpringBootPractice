@@ -5,14 +5,14 @@
 BootStrap
 
 #### Q6  結合テスト
-- CombinedTes  
-  単体テストを順番に並べただけ
+- CombinedTest  
+  単体テストを順番に並べた
 - CombinedTest3  
   WebTestClientで単体テストを順番にならべた
 
 ## メモ
 ### 起動
-
+docker-compose up -d
 ### テスト
 docker-compose exec app bash  
 ./gradlew test (--tests *クラス名)  
